@@ -1,0 +1,42 @@
+{
+  "name": "ng-range-slider",
+  "version": "0.0.1",
+  "description": "Angular element directive for HTML5 range input",
+  "main": "ng-range-slider.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.unit.conf.js --single-run"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-karma": "^0.8.2",
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt": "^0.4.4",
+    "bower": "^1.3.1",
+    "karma-script-launcher": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-jasmine": "^0.1.5",
+    "requirejs": "^2.1.11",
+    "karma-requirejs": "^0.2.1",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.1.2",
+    "karma": "^0.12.1",
+    "load-grunt-tasks": "^0.4.0",
+    "karma-teamcity-reporter": "^0.1.1",
+    "jshint-teamcity": "^1.0.4",
+    "jshint-stylish": "^0.1.5",
+    "karma-coverage": "^0.2.1",
+    "grunt-lintspaces": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "dependencies": {
+    "statik": "^1.4.6"
+  }
+}
