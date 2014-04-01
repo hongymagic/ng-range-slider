@@ -45,7 +45,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: ['<%= files.src %>'],
-				dest: 'cba-angular-cmx.js'
+				dest: 'ng-range-slider.js'
 			}
 		},
 
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
 					sourceMap: true
 				},
 				files: {
-					'cba-angular-cmx.min.js': ['cba-angular-cmx.js']
+					'ng-range-slider.min.js': ['ng-range-slider.js']
 				}
 			}
 		},
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.registerTask('default', ['jshint', 'lintspaces', 'karma:unit', 'concat', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'lintspaces', 'concat', 'uglify']);
 	grunt.registerTask('debug', ['jshint', 'lintspaces', 'karma:debug']);
 	grunt.registerTask('build', ['jshint', 'karma:continuous', 'concat', 'uglify']);
 };

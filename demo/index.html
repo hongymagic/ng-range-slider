@@ -1,0 +1,67 @@
+<!doctype>
+<html>
+	<head>
+		<script src="../components/angular/angular.min.js"></script>
+		<script src="../components/jquery/dist/jquery.min.js"></script>
+		<script src="../ng-range-slider.js"></script>
+
+		<style>
+			body {
+				background-color: #fff;
+			}
+			.range-slider {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 0.88889rem;
+				border: 1px solid #dddddd;
+				margin: 1.11111rem 0;
+				padding: 0;
+				box-sizing: border-box;
+				touch-action: none;
+				-ms-touch-action: none;
+				background: #fafafa;
+			}
+			.range-slider .range-slider-handle {
+				display: inline-block;
+				position: absolute;
+				z-index: 1;
+				top: -0.27778rem;
+				width: 1.77778rem;
+				height: 1.22222rem;
+				border: 1px solid none;
+				padding: 0;
+				box-sizing: border-box;
+				cursor: pointer;
+				background: #008cba;
+			}
+			.range-slider .range-slider-handle:hover {
+				background: #009dcb;
+			}
+			.range-slider .range-slider-handle:active {
+				background: #00aedc;
+			}
+			.range-slider .range-slider-active-segment {
+				display: inline-block;
+				position: absolute;
+				height: 0.77778rem;
+				background: #e5e5e5;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body ng-app="demo">
+		<div ng-controller="DemoController">
+			<range-slider min="0" max="100" step="2" ng-model="price" debug="true"></range-slider>
+		</div>
+
+		<script>
+			var demo = angular.module('demo', ['ng-range-slider']);
+
+			demo
+			.controller('DemoController', ['$scope', function ($scope) {
+				$scope.price = 50;
+			}]);
+		</script>
+	</body>
+</html>
